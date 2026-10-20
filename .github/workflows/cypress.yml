@@ -78,3 +78,6 @@ jobs:
            cypress/e2e/login-clinica.cy.js
 
          wait-on: 'http://localhost:3000,http://localhost:8080'
+         install-command: npm ci --legacy-peer-deps
+
+    
