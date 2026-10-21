@@ -79,5 +79,9 @@ jobs:
 
          wait-on: 'http://localhost:3000,http://localhost:8080'
          install-command: npm ci --legacy-peer-deps
+         record: true
+       env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY}}
+          GITHUB_TOKEN: ${{ secrest.GITHUB_TOKEN}}
 
     
